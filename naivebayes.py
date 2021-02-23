@@ -12,17 +12,20 @@ class NaiveBayes():
         for c in self._classes:
             X_c = X[c==y]
             self._mean[c,:] = X_c.mean(axis=0)
+            print(self._mean[c,:] )
             self._var[c,:] = X_c.var(axis=0)
             self._priors[c] = X_c.shape[0]/float(n_samples)
+            print(X_c.shape[0]/float(n_samples))
     def predict(self,X):
         y_pred = [self._predict(x) for x in X]
         return y_pred
     def _predict(self,x):
         posteriors = []
         for i,c in enumerate(self._classes):
-            prior = np.log(self._priors[i])
+            prior = np.log(self._priors[i]) 
+
             class_conditional = np.sum(np.log(self._pdf(i,x)))
-            posterior = prior + class_conditional
+            posterior = prior + class_conditional 
             posteriors.append(posterior)
 
         return self._classes[np.argmax(posteriors)]
