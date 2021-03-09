@@ -1,0 +1,15 @@
+Is there a videogame you enjoy that uses simple graphics, relies more on action or puzzles than high fidelity art/audio atmosphere, and can get by with straightforward level structures and (if applicable) AI?
+
+Clone it. Or at least most of its core functionality. Not as a business move, and not to try to get famous off it, just as an exercise in studying the details of its gameplay.
+
+By cloning a game that you already like, you will…
+
+1. …be pulled into studying the concrete ins and outs of an existing game in great detail.
+
+2. …have a clear, complete, and coherent target to compare your work against.
+
+3. …avoid being stalled by uncertainty about what else is left to be done.
+
+4. …skip the common beginner risk of stalling until quitting from lack of knowing when/how to end the design phase.
+
+5. …focus first on how to make things work, without being distracted by deciding what to make work.
